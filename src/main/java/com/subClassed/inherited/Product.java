@@ -1,22 +1,20 @@
 package com.subClassed.inherited;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Product {
 
   private String item;
+  private int price;
 
-  List<String> list = new ArrayList<>();
-
-  public Product(String item) {
-    list.add("Exotic Car");
-    list.add("Helicoptors and Bikes");
-    list.add("Beerbongs and Bentleys");
-    list.add(item);
+  public Product(String item, int price) {
+    this.item = item;
+    this.price = price;
   }
 
-  public String getItem(int ind) {
-    return list.get(ind);
+  public String getItem() {
+    return item;
+  }
+
+  public int getPrice() {
+    return price;
   }
 }
